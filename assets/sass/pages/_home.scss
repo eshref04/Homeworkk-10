@@ -1,0 +1,163 @@
+@import "../components/buttons";
+@import "../utils/variables";
+@import "../base/typography";
+
+.find__section{
+    background-image: url("https://arid-html.vercel.app/main-file/dist/assets/images/hero/h4.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    
+    
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 120px 0px;
+    }
+
+    &__btns{
+        display: flex;
+        gap: 14px;
+        margin-top: 40px;
+        
+
+        &__loc{
+            padding: 10px;
+            width: 280px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            background: transparent;
+            color: $light-color;
+            border:1px solid $light-color;
+        }
+
+        &__date{
+            padding: 10px;
+            width: 380px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            background: transparent;
+            color: $light-color;
+            border:1px solid $light-color;
+        }
+
+        &__type{
+            padding: 10px;
+            width: 260px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            background: transparent;
+            color: $light-color;
+            border:1px solid $light-color;
+        }
+    }
+
+    &__heading{
+        color: $light-color;
+        text-align: center;
+
+        p{
+            font-family: $header-fontFamily;
+            font-size: 22px;
+        }
+
+        h1{
+            font-size: 76px;
+            font-family: Poppins;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+    text-shadow: hsla(0, 0%, 100%, 0.6) -2px 2px 30px;
+        }
+    }
+}
+
+.pop__section{
+   .container{
+    padding: 120px;
+   }
+
+   &__head{
+    display: flex;
+    justify-content: space-between;
+
+    &__right{
+        display: flex;
+        gap: 40px;
+
+        &__l{
+            position: relative;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            border: 1px solid $orange-color;
+            display: flex;
+            align-items: center;
+            i{
+                position: absolute;
+                right: -10px;
+                font-size: 26px;
+                color: $orange-color;
+            }
+        }
+
+        &__r{
+            position: relative;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            border: 1px solid $orange-color;
+            display: flex;
+            align-items: center;
+
+            i{
+                position: absolute;
+                left: -10px;
+                font-size: 26px;
+                color: $orange-color;
+            }
+        }
+    }
+
+   
+   }
+
+&__down{
+ margin-top: 50px;
+ 
+   
+ &__card{
+    display: flex;
+ gap: 20px;
+
+    &__body{
+        margin-top: 14px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        a{
+            font-size: 22px;
+            color: black;
+            font-family: "Playfair Display, serif";
+        }
+
+        &__content{
+            display: flex;
+            gap: 28px;
+        }
+    }
+ }
+}
+}
+
