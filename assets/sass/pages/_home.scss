@@ -1,163 +1,668 @@
 @import "../components/buttons";
 @import "../utils/variables";
 @import "../base/typography";
+@import "../layout/grid";
 
-.find__section{
-    background-image: url("https://arid-html.vercel.app/main-file/dist/assets/images/hero/h4.webp");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    position: relative;
-    
-    
-    .container{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        padding: 120px 0px;
+.find__section {
+  background-image: url("https://arid-html.vercel.app/main-file/dist/assets/images/hero/h4.webp");
+  @extend .background;
+  background-attachment: fixed;
+  position: relative;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 120px 0px;
+  }
+
+  &__btns {
+    display: flex;
+    gap: 14px;
+    margin-top: 40px;
+
+    &__loc {
+      padding: 10px;
+      width: 280px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      background: transparent;
+      color: $light-color;
+      border: 1px solid $light-color;
     }
 
-    &__btns{
-        display: flex;
-        gap: 14px;
-        margin-top: 40px;
-        
-
-        &__loc{
-            padding: 10px;
-            width: 280px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 12px;
-            background: transparent;
-            color: $light-color;
-            border:1px solid $light-color;
-        }
-
-        &__date{
-            padding: 10px;
-            width: 380px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 12px;
-            background: transparent;
-            color: $light-color;
-            border:1px solid $light-color;
-        }
-
-        &__type{
-            padding: 10px;
-            width: 260px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 12px;
-            background: transparent;
-            color: $light-color;
-            border:1px solid $light-color;
-        }
+    &__date {
+      padding: 10px;
+      width: 380px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      background: transparent;
+      color: $light-color;
+      border: 1px solid $light-color;
     }
 
-    &__heading{
-        color: $light-color;
-        text-align: center;
-
-        p{
-            font-family: $header-fontFamily;
-            font-size: 22px;
-        }
-
-        h1{
-            font-size: 76px;
-            font-family: Poppins;
-    color: transparent;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: white;
-    text-shadow: hsla(0, 0%, 100%, 0.6) -2px 2px 30px;
-        }
+    &__type {
+      padding: 10px;
+      width: 260px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      background: transparent;
+      color: $light-color;
+      border: 1px solid $light-color;
     }
+  }
+
+  &__heading {
+    color: $light-color;
+    text-align: center;
+
+    p {
+      font-family: $header-fontFamily;
+      font-size: 22px;
+    }
+
+    h1 {
+      font-size: 76px;
+      font-family: Poppins;
+      color: transparent;
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: white;
+      text-shadow: hsla(0, 0%, 100%, 0.6) -2px 2px 30px;
+    }
+  }
 }
 
-.pop__section{
-   .container{
-    padding: 120px;
-   }
+.pop__section {
+  .container {
+    padding: 120px 0px;
+  }
 
-   &__head{
+  .button__container {
+    width: 100%;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__head {
     display: flex;
     justify-content: space-between;
 
-    &__right{
+    &__right {
+      display: flex;
+      gap: 40px;
+
+      &__l {
+        position: relative;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        border: 1px solid $orange-color;
         display: flex;
-        gap: 40px;
-
-        &__l{
-            position: relative;
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            border: 1px solid $orange-color;
-            display: flex;
-            align-items: center;
-            i{
-                position: absolute;
-                right: -10px;
-                font-size: 26px;
-                color: $orange-color;
-            }
+        align-items: center;
+        i {
+          position: absolute;
+          right: -10px;
+          font-size: 26px;
+          color: $orange-color;
         }
+      }
 
-        &__r{
-            position: relative;
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            border: 1px solid $orange-color;
-            display: flex;
-            align-items: center;
+      &__r {
+        position: relative;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        border: 1px solid $orange-color;
+        display: flex;
+        align-items: center;
 
-            i{
-                position: absolute;
-                left: -10px;
-                font-size: 26px;
-                color: $orange-color;
-            }
+        i {
+          position: absolute;
+          left: -10px;
+          font-size: 26px;
+          color: $orange-color;
         }
+      }
     }
+  }
 
-   
-   }
-
-&__down{
- margin-top: 50px;
- 
-   
- &__card{
+  &__down {
+    margin-top: 50px;
     display: flex;
- gap: 20px;
+    gap: 20px;
+    &__card {
+      gap: 20px;
 
-    &__body{
+      &__body {
         margin-top: 14px;
         display: flex;
         flex-direction: column;
         gap: 16px;
 
-        a{
-            font-size: 22px;
-            color: black;
-            font-family: "Playfair Display, serif";
+        a {
+          font-size: 22px;
+          color: black;
+          font-family: "Playfair Display, serif";
         }
 
-        &__content{
-            display: flex;
-            gap: 28px;
+        &__content {
+          display: flex;
+          gap: 28px;
         }
+      }
     }
- }
+  }
 }
+
+.attractions__sections {
+  background: #fff7e9;
+
+  &__heading {
+    text-align: center;
+
+    h5 {
+      font-family: "Satisfy, cursive";
+      font-size: 24px;
+      color: $orange-color;
+    }
+
+    h2 {
+      font-size: 40px;
+      font-family: "Playfair Display, serif";
+    }
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    padding: 120px 0px;
+  }
+
+  &__cards {
+    display: flex;
+    gap: 40px;
+
+    &__image {
+      width: 224px;
+      height: 200px;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__content {
+      text-align: center;
+      margin-top: 20px;
+
+      a {
+        color: black;
+        font-size: 22px;
+        font-family: "Playfair Display, serif";
+      }
+
+      p {
+        color: $orange-color;
+        font-weight: 500;
+        font-size: 18px;
+        margin-top: 4px;
+        font-family: $header-fontFamily;
+      }
+    }
+  }
+}
+
+.choose__section {
+  &__card {
+    display: flex;
+    gap: 50px;
+
+    &__content {
+      text-align: center;
+      margin-top: 20px;
+
+      h4 {
+        color: black;
+        font-size: 22px;
+        font-family: "Playfair Display, serif";
+      }
+
+      p {
+        font-weight: 500;
+        font-size: 18px;
+        margin-top: 4px;
+        font-family: $header-fontFamily;
+      }
+    }
+  }
+
+  &__body {
+    text-align: center;
+  }
+
+  &__image {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__heading {
+    text-align: center;
+
+    h5 {
+      font-family: "Satisfy, cursive";
+      font-size: 24px;
+      color: $orange-color;
+    }
+
+    h2 {
+      font-size: 40px;
+      font-family: "Playfair Display, serif";
+    }
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    padding: 120px 0px;
+  }
+}
+
+.views__section{
+  background-image: url("https://arid-html.vercel.app/main-file/dist/assets/images/backgrounds/video-banner.webp");
+  
+  @extend .background;
+  padding: 120px;
+  
+  .container{
+    @extend .divCenter;
+    flex-direction: column;
+    text-align: center;
+    color: $light-color;
+  }
+
+  &__heading{
+         h2{
+          font-family: "Playfair Display, serif";
+          font-size: 48px;
+          font-weight: 700;
+         }
+
+         p{
+          font-family: $header-fontFamily;
+          font-size: 20px;
+          font-weight: 500;
+         }
+  }
+
+  &__image{
+    background-color: #E8604C;
+    @extend .divCenter;
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+}
+
+.brands__section{
+  .container{
+    padding-top: 100px;
+   display: flex;
+   align-items: center;
+  }
+
+  &__cards{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    &__image{
+     @extend .divCenter;
+     width: 224px;
+     height: 120px;
+     border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+  }
+}
+
+.tours__section{
+  .container{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__heading{
+    text-align: center;
+    margin-bottom: 50px;
+
+    h5 {
+      font-family: "Satisfy, cursive";
+      font-size: 24px;
+      color: $orange-color;
+    }
+
+    h2 {
+      font-size: 40px;
+      font-family: "Playfair Display, serif";
+    }
+  }
+
+  &__cards{
+    display: flex;
+    gap: 36px;
+  }
+
+  &__card{
+    height: 510px;
+    width: 393px;
+    justify-content: flex-end;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    i{
+      font-size: 12px;
+    }
+
+    &__content{
+      a{
+        color: white;
+        margin-bottom: 10px;
+        font-family: "Playfair Display, serif";
+        font-size: 22px;
+      }
+
+      span{
+        font-family: $header-fontFamily;
+        font-size: 18px;
+      }
+    }
+  }
+
+  &__card1{
+    background-image: url("https://arid-html.vercel.app/main-file/dist/assets/images/packages/p4-1.webp");
+    @extend .background;
+  }
+
+  &__card2{
+    background-image: url("https://arid-html.vercel.app/main-file/dist/assets/images/packages/p4-2.webp");
+    @extend .background;
+  }
+
+  &__card3{
+    background-image: url("https://arid-html.vercel.app/main-file/dist/assets/images/packages/p4-1.webp");
+    @extend .background;
+  }
+}
+
+.opinion__section{
+
+   &__icon1{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid $orange-color;
+    display: flex;
+    align-items: center;
+    margin-right: 80px;
+    
+
+    &:hover {
+      i{
+        margin-right: 10px;
+      
+      }
+      cursor: pointer;
+    }
+    
+    i {
+      position: absolute;
+      right: -10px;
+      font-size: 26px;
+      color: $orange-color;
+      transition: 0.3s all linear;
+    }
+   }
+
+   &__icon2{
+    position: relative;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 1px solid $orange-color;
+        display: flex;
+        align-items: center;
+        margin-left: 80px;
+
+        &:hover {
+          i{
+            margin-left: 10px;
+          
+          }
+          cursor: pointer;
+        }
+
+        i {
+          position: absolute;
+          left: -10px;
+          font-size: 26px;
+          color: $orange-color;
+          transition: 0.3s all linear;
+        }
+   }
+
+  .container{
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    
+  }
+
+  &__card{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    
+    &__right{
+      margin-left: 40px;
+
+      p{
+           font-size: 25px;
+           font-family: "Playfair Display, serif";
+           font-style: italic;
+           margin: 16px 0px 0px 0px;
+      }
+
+      &__svg2{
+        text-align: end;
+      }
+    }
+    
+    &__left{
+      
+      
+
+
+      &__image{
+        margin: 50px 0px 0px 100px;
+      }
+
+      &__content{
+           text-align: center;
+           margin: 20px 0px 0px 120px;
+
+           h5{
+            font-size: 24px;
+            font-family: "Playfair Display, serif";
+           }
+
+           p{
+            font-family: $header-fontFamily;
+            font-size: $header-font;
+           }
+      }
+    }
+  }
+
+ 
+}
+
+.news__section{
+  .container{
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__heading{
+    text-align: center;
+    margin-bottom: 50px;
+
+    h5 {
+      font-family: "Satisfy, cursive";
+      font-size: 24px;
+      color: $orange-color;
+    }
+
+    h2 {
+      font-size: 40px;
+      font-family: "Playfair Display, serif";
+    }
+}
+
+&__cards{
+  display: flex;
+  gap: 20px;
+
+}
+
+&__card{
+  width: 605px;
+  border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  &__image{
+    width: 590px;
+  }
+
+  &__body{
+    padding: 30px 0px 0px 50px;
+
+    &__above{
+      display: flex;
+      gap: 30px;
+      margin-bottom: 30px;
+      font-family: $header-fontFamily;
+      color: #353535;
+      font-size: 14px;
+
+      &__des{
+        display: flex;
+        gap: 8px;
+        align-items: center;
+      }
+    }
+
+    &__content {
+      padding-bottom: 30px;
+         a{
+          font-size: 22px;
+          font-family: "Playfair Display, serif";
+          color: black;
+          
+         }
+
+         p{
+          margin-top: 10px;
+          font-size: $header-font;
+          font-family: $header-fontFamily;
+          color: #353535;
+         }
+
+         .read{
+           color: $orange-color;
+           font-family: $header-fontFamily;
+           font-size: 14px;
+           font-weight: 500;
+           
+         }
+    }
+  }
+}
+}
+
+.images__section{
+
+  .container{
+    padding-top: 100px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    
+  }
+
+  &__image{
+    position: relative;
+    
+
+    &:hover {
+     
+      .images__section__image__icon{
+        display: flex;
+        cursor: pointer;
+      }
+        
+        
+    }
+    img{
+      width: 285px;
+      height: 275px;
+    }
+
+  &__icon{
+    transition: all 0.3s linear;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+   @extend .divCenter; 
+   background-color: $light-color;
+
+   &:hover{
+    background-color: $orange-color;
+    color: $light-color;
+   }
+  }
+  }
 }
 

@@ -1,0 +1,233 @@
+@import "../components/buttons";
+@import "../utils/variables";
+@import "../base/typography";
+@import "../layout/grid";
+
+
+footer{
+    margin-top: 70px;
+    background: linear-gradient(rgba(8, 8, 11, .8) 100%, rgba(8, 8, 11, .8) 100%), url("https://arid-html.vercel.app/main-file/dist/assets/images/backgrounds/footer-bg-1.webp");
+    @extend .background;
+    color: $light-color;
+
+  
+
+    .container{
+      padding-top: 50px;
+    }
+  
+    .footer__above{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 34px;
+
+      &__icons{
+        display: flex;
+        gap: 30px;
+
+        
+
+        &__icon{
+          width: 56px;
+         height: 56px;
+          border-radius: 50%;
+          background-color: $light-color;
+          color: black;
+          @extend .divCenter;
+          font-size: 24px;
+          transition: all 0.3s linear;
+
+          &:hover{
+            cursor: pointer;
+            background-color: $orange-color;
+
+          }
+        }
+
+
+        span{
+          margin-left: 10px;
+        }
+      }
+    }
+
+    .footer__mid{
+      margin-top: 70px;
+      display: flex;
+      justify-content: space-between;
+      
+      h3{
+        font-size: 25px;
+        font-family: "Playfair Display, serif";
+        font-weight: 600;
+      }
+
+      &__button1{
+        width: 345px;
+        transition: 0.3s all linear;
+
+        &:hover{
+         background-color: rgba(206, 203, 197, 0.065);
+        }
+      }
+
+      &__button2{
+        font-weight: 500;
+        margin-bottom: 50px;
+        background-color: rgb(33 ,159 ,255);
+        border-radius: 40px;
+        width: 140px;
+        @extend .divCenter;
+        padding: 10px;
+        margin-top: 16px;
+
+        &:hover{
+          cursor: pointer;
+        }
+        
+        a{
+          color: $light-color;
+          font-size: $header-font;
+          font-family: $header-fontFamily;
+         }
+      }
+ 
+      &__inp{
+      position: relative;
+
+      i{
+        position: absolute;
+        top: 15px;
+        left: 18px;
+      }
+
+      input{
+        padding: 10px 0px 10px 40px;
+        border: 1px solid rgb(221, 221, 221);
+    background-color: transparent;
+    color: white;
+    width: 345px;
+      }
+      }
+
+
+      &__left{
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+
+        
+      }
+
+      &__nav{
+         h3{
+          margin-left: 32px;
+         }
+        ul{
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+         margin-top: 30px;
+
+          a{
+            color: white;
+            font-size: $header-font;
+            font-family: $header-fontFamily;
+            font-weight: 500;
+            transition: 0.3s all linear;
+
+            &:hover{
+              color: $orange-color;
+            }
+          }
+        }
+      }
+
+      &__dest{
+        h3{
+         margin-left: 32px;
+        }
+       ul{
+         display: flex;
+         flex-direction: column;
+         gap: 16px;
+        margin-top: 30px;
+
+         a{
+          transition: 0.3s all linear;
+           color: white;
+           font-size: $header-font;
+           font-family: $header-fontFamily;
+           font-weight: 500;
+
+           &:hover{
+            color: $orange-color;
+           }
+         }
+       }
+     }
+
+     &__right{
+      h3{
+       margin-left: 32px;
+      }
+     ul{
+       display: flex;
+       flex-direction: column;
+       gap: 16px;
+      margin-top: 30px;
+
+       a{
+        transition: 0.3s all linear;
+         color: white;
+         font-size: $header-font;
+         font-family: $header-fontFamily;
+         font-weight: 500;
+         margin-left: 14px;
+
+         &:hover{
+          color: $orange-color;
+         }
+       }
+
+       i{
+        color: $orange-color;
+       
+       }
+     }
+   }
+
+    }
+
+    .footer__end{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &__left{
+        font-size: $header-font;
+        font-family: $header-fontFamily;
+      
+      }
+
+      &__right{
+        display: flex;
+          align-items: center;
+        a{
+          transition: all 0.3s linear;
+          color: white;
+          font-size: $header-font;
+          font-family: $header-fontFamily;
+
+          &:hover{
+            color: $orange-color;
+          }
+        }
+      }
+    }
+
+    
+
+   
+  }

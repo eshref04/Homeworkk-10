@@ -1,170 +1,654 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homework-10</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/main.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
     <header>
       <div class="container">
-     <div class="header__left">
-      <button class="all__button">Book a Trip <i class="fa-solid fa-chevron-right"></i></button>
-     </div>
- 
-     <nav class="header__menu">
-        <ul>
-            <li><a href="#">Home <i class="fa-solid fa-plus"></i></a></li>
-            <li><a href="#">Pages <i class="fa-solid fa-plus"></i></a></li>
-            <li><a href="#">Destination <i class="fa-solid fa-plus"></i></a></li>
-            <li><a href="#"><img src="https://arid-html.vercel.app/main-file/dist/assets/images/logo-2.png" alt=""></a></li>
-            <li><a href="#">Blogs <i class="fa-solid fa-plus"></i></a></li>
-            <li><a href="#">Packages <i class="fa-solid fa-plus"></i></a></li>
-            <li><a href="#">Contact <i class="fa-solid fa-plus"></i></a></li>
-        </ul>
-     </nav>
+        <div class="header__left">
+          <button class="all__button">
+            Book a Trip <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
 
+        <nav class="header__menu">
+          <ul>
+            <li>
+              <a href="#">Home <i class="fa-solid fa-plus"></i></a>
+            </li>
+            <li>
+              <a href="#">Pages <i class="fa-solid fa-plus"></i></a>
+            </li>
+            <li>
+              <a href="#">Destination <i class="fa-solid fa-plus"></i></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="https://arid-html.vercel.app/main-file/dist/assets/images/logo-2.png"
+                  alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#">Blogs <i class="fa-solid fa-plus"></i></a>
+            </li>
+            <li>
+              <a href="#">Packages <i class="fa-solid fa-plus"></i></a>
+            </li>
+            <li>
+              <a href="#">Contact <i class="fa-solid fa-plus"></i></a>
+            </li>
+          </ul>
+        </nav>
 
-     <div class="header__right">
-        <i class="fa-brands fa-shopify"></i>
-        <span>Cart (01)</span>
-<div class="header__right__user" >
-
-    <i class="fa-regular fa-user"></i>
-</div>
-     </div>
+        <div class="header__right">
+          <i class="fa-brands fa-shopify"></i>
+          <span>Cart (01)</span>
+          <div class="header__right__user">
+            <i class="fa-regular fa-user"></i>
+          </div>
+        </div>
       </div>
     </header>
 
     <main>
-        <section class="find__section">
+      <section class="find__section">
         <div class="container">
-         <div class="find__section__heading">
+          <div class="find__section__heading">
             <h1>Find Next Place To Visit.</h1>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an <br> commodo ligula eget dolor. Aenean massa. Cum sociis the</p>
-         </div>
- 
-         <div class="find__section__btns">
-         <button class="find__section__btns__loc"><i class="fa-solid fa-location-dot"></i> Destinations <i class="fa-solid fa-angle-down"></i>
-        </button>
-        <button class="find__section__btns__date">
-            <i class="fa-solid fa-calendar"></i> Select Date
-        </button>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an
+              <br />
+              commodo ligula eget dolor. Aenean massa. Cum sociis the
+            </p>
+          </div>
 
-        <button class="find__section__btns__type">
-            <i class="fa-solid fa-person"></i> Tour Type <i class="fa-solid fa-angle-down"></i>
-        </button>
+          <div class="find__section__btns">
+            <button class="find__section__btns__loc">
+              <i class="fa-solid fa-location-dot"></i> Destinations
+              <i class="fa-solid fa-angle-down"></i>
+            </button>
+            <button class="find__section__btns__date">
+              <i class="fa-solid fa-calendar"></i> Select Date
+            </button>
 
-        <button class="all__button">
-          FIND NOW
-        </button>
-         </div>
+            <button class="find__section__btns__type">
+              <i class="fa-solid fa-person"></i> Tour Type
+              <i class="fa-solid fa-angle-down"></i>
+            </button>
 
-             
+            <button class="all__button">FIND NOW</button>
+          </div>
         </div>
-        </section>
+      </section>
 
-        <section class="pop__section">
+      <section class="pop__section">
         <div class="container">
-         <div class="pop__section__head">
-          <div class="pop__section__head__left">
-            <h5>Travel Category</h5>
-            <h2>Our Popular Tours Type</h2>
-          </div>
+          <div class="pop__section__head">
+            <div class="pop__section__head__left">
+              <h5>Travel Category</h5>
+              <h2>Our Popular Tours Type</h2>
+            </div>
 
-          <div class="pop__section__head__right">
-         <div class="pop__section__head__right__l"><i class="fa-solid fa-arrow-left-long"></i></div>
-         <div class="pop__section__head__right__r"><i class="fa-solid fa-arrow-right-long"></i></div>
+            <div class="pop__section__head__right">
+              <div class="pop__section__head__right__l">
+                <i class="fa-solid fa-arrow-left-long"></i>
+              </div>
+              <div class="pop__section__head__right__r">
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </div>
+            </div>
           </div>
-         </div>
 
           <div class="pop__section__down">
-           <div class="pop__section__down__card">
-           <div class="pop__section__down__card__image">
-            <img width="392px" src="https://arid-html.vercel.app/main-file/dist/assets/images/packages/p1-2.webp" alt="">
-            
-           </div>
+            <div class="pop__section__down__card">
+              <div class="pop__section__down__card__image">
+                <img
+                  width="392px"
+                  src="https://arid-html.vercel.app/main-file/dist/assets/images/packages/p1-2.webp"
+                  alt=""
+                />
+              </div>
 
-           <div class="pop__section__down__card__body">
-            <a href="#">Family Tours of Taj Mahal
-                New Delhi <br> India</a>
+              <div class="pop__section__down__card__body">
+                <a href="#"
+                  >Family Tours of Taj Mahal New Delhi <br />
+                  India</a
+                >
 
                 <div class="pop__section__down__card__body__content">
-                    <div><i class="fa-regular fa-user"></i> 05 People</div>
-                    <div><i class="fa-regular fa-clock"></i> 03 Days</div>
-                    <div><i class="fa-brands fa-bitcoin"></i> $250</div>
+                  <div><i class="fa-regular fa-user"></i> 05 People</div>
+                  <div><i class="fa-regular fa-clock"></i> 03 Days</div>
+                  <div><i class="fa-brands fa-bitcoin"></i> $250</div>
                 </div>
 
                 <div class="pop__section__down__card__body__exp">
-                    Explore Now <i class="fa-solid fa-arrow-right-long"></i>
+                  Explore Now <i class="fa-solid fa-arrow-right-long"></i>
                 </div>
-           </div>
-           </div>
-
-
-           <div class="pop__section__down__card">
-            <div class="pop__section__down__card__image">
-             <img width="392px" src="https://arid-html.vercel.app/main-file/dist/assets/images/packages/p1-2.webp" alt="">
-             
-            </div>
- 
-            <div class="pop__section__down__card__body">
-             <a href="#">Family Tours of Taj Mahal
-                 New Delhi <br> India</a>
- 
-                 <div class="pop__section__down__card__body__content">
-                     <div><i class="fa-regular fa-user"></i> 05 People</div>
-                     <div><i class="fa-regular fa-clock"></i> 03 Days</div>
-                     <div><i class="fa-brands fa-bitcoin"></i> $250</div>
-                 </div>
- 
-                 <div class="pop__section__down__card__body__exp">
-                     Explore Now <i class="fa-solid fa-arrow-right-long"></i>
-                 </div>
-            </div>
+              </div>
             </div>
 
             <div class="pop__section__down__card">
-                <div class="pop__section__down__card__image">
-                 <img width="392px" src="https://arid-html.vercel.app/main-file/dist/assets/images/packages/p1-2.webp" alt="">
-                 
-                </div>
-     
-                <div class="pop__section__down__card__body">
-                 <a href="#">Family Tours of Taj Mahal
-                     New Delhi <br> India</a>
-     
-                     <div class="pop__section__down__card__body__content">
-                         <div><i class="fa-regular fa-user"></i> 05 People</div>
-                         <div><i class="fa-regular fa-clock"></i> 03 Days</div>
-                         <div><i class="fa-brands fa-bitcoin"></i> $250</div>
-                     </div>
-     
-                     <div class="pop__section__down__card__body__exp">
-                         Explore Now <i class="fa-solid fa-arrow-right-long"></i>
-                     </div>
-                </div>
+              <div class="pop__section__down__card__image">
+                <img
+                  width="392px"
+                  src="https://arid-html.vercel.app/main-file/dist/assets/images/packages/p1-2.webp"
+                  alt=""
+                />
+              </div>
+
+              <div class="pop__section__down__card__body">
+                <a href="#"
+                  >Family Tours of Taj Mahal New Delhi <br />
+                  India</a
+                >
+
+                <div class="pop__section__down__card__body__content">
+                  <div><i class="fa-regular fa-user"></i> 05 People</div>
+                  <div><i class="fa-regular fa-clock"></i> 03 Days</div>
+                  <div><i class="fa-brands fa-bitcoin"></i> $250</div>
                 </div>
 
-              
+                <div class="pop__section__down__card__body__exp">
+                  Explore Now <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="pop__section__down__card">
+              <div class="pop__section__down__card__image">
+                <img
+                  width="392px"
+                  src="https://arid-html.vercel.app/main-file/dist/assets/images/packages/p1-2.webp"
+                  alt=""
+                />
+              </div>
+
+              <div class="pop__section__down__card__body">
+                <a href="#"
+                  >Family Tours of Taj Mahal New Delhi <br />
+                  India</a
+                >
+
+                <div class="pop__section__down__card__body__content">
+                  <div><i class="fa-regular fa-user"></i> 05 People</div>
+                  <div><i class="fa-regular fa-clock"></i> 03 Days</div>
+                  <div><i class="fa-brands fa-bitcoin"></i> $250</div>
+                </div>
+
+                <div class="pop__section__down__card__body__exp">
+                  Explore Now <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
+              </div>
+            </div>
           </div>
 
-           <button>View All <i class="fa-solid fa-chevron-right"></i></button>
+          <div class="button__container">
+            <button class="all__button">
+              View All <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
 
+      <section class="attractions__sections">
+        <div class="container">
+          <div class="attractions__sections__heading">
+            <h5>Explore Our Tours</h5>
+            <h2>Top Attractions Destinations</h2>
+          </div>
+
+          <div class="attractions__sections__cards">
+            <div class="attractions__sections__cards__body">
+              <div class="attractions__sections__cards__image">
+                <img
+                  src="https://arid-html.vercel.app/main-file/dist/assets/images/destination/m-1.png"
+                  alt=""
+                />
+              </div>
+              <div class="attractions__sections__cards__content">
+                <a href="#">Beauty of France</a>
+                <p>10 Tours Place</p>
+              </div>
+            </div>
+
+            <div class="attractions__sections__cards__body">
+              <div class="attractions__sections__cards__image">
+                <img
+                  src="https://arid-html.vercel.app/main-file/dist/assets/images/destination/m-2.png"
+                  alt=""
+                />
+              </div>
+              <div class="attractions__sections__cards__content">
+                <a href="#">London England</a>
+                <p>10 Tours Place</p>
+              </div>
+            </div>
+
+            <div class="attractions__sections__cards__body">
+              <div class="attractions__sections__cards__image">
+                <img
+                  src="https://arid-html.vercel.app/main-file/dist/assets/images/destination/m-3.png"
+                  alt=""
+                />
+              </div>
+              <div class="attractions__sections__cards__content">
+                <a href="#">Tokyo,Japan</a>
+                <p>10 Tours Place</p>
+              </div>
+            </div>
+
+            <div class="attractions__sections__cards__body">
+              <div class="attractions__sections__cards__image">
+                <img
+                  src="https://arid-html.vercel.app/main-file/dist/assets/images/destination/m-4.png"
+                  alt=""
+                />
+              </div>
+              <div class="attractions__sections__cards__content">
+                <a href="#">Baku,Azerbaijan</a>
+                <p>08 Tours Place</p>
+              </div>
+            </div>
+
+            <div class="attractions__sections__cards__body">
+              <div class="attractions__sections__cards__image">
+                <img
+                  src="https://arid-html.vercel.app/main-file/dist/assets/images/destination/m-5.png"
+                  alt=""
+                />
+              </div>
+              <div class="attractions__sections__cards__content">
+                <a href="#">New York,USA</a>
+                <p>06 Tours Place</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <button class="all__button">
+              View All <i class="fa-solid fa-angle-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="choose__section">
+        <div class="container">
+          <div class="choose__section__heading">
+            <h5>Why Choose Us</h5>
+            <h2>Why Travel with Arid?</h2>
+          </div>
+
+          <div class="choose__section__card">
+            <div class="choose__section__body">
+              <div class="choose__section__image">
+                <img
+                  src="https://arid-html.vercel.app/main-file/dist/assets/images/icons/ill-price.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="choose__section__card__content">
+                <h4>Best Price Granted</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consecte tur adipiscing elit.
+                  <br />
+                  sed do eiusmod incididunt.
+                </p>
+              </div>
+            </div>
+
+            <div class="choose__section__body">
+              <div class="choose__section__image">
+                <img
+                  src="https://arid-html.vercel.app/main-file/dist/assets/images/icons/ill-guide.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="choose__section__card__content">
+                <h4>Best Price Granted</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consecte tur adipiscing elit.
+                  <br />
+                  sed do eiusmod incididunt.
+                </p>
+              </div>
+            </div>
+
+            <div class="choose__section__body">
+              <div class="choose__section__image">
+                <img
+                  src="https://arid-html.vercel.app/main-file/dist/assets/images/icons/ill-care.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="choose__section__card__content">
+                <h4>Best Price Granted</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consecte tur adipiscing elit.
+                  <br />
+                  sed do eiusmod incididunt.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="views__section">
+      <div class="container">
+        <div class="views__section__heading">
+          <h2>Views trip latest shots</h2>
+           <p>Mlor sit amet, consectetur adipiscing elit. Arcu at viverra eget <br> porttitor condimentum nisl pool.</p></div>
+           <div class="views__section__image"><img src="https://arid-html.vercel.app/main-file/dist/assets/images/icons/video-circle.svg" alt=""></div>
+      </div>
+      </section>
+
+      <section class="brands__section">
+       <div class="container">
+          <div class="brands__section__cards">
+            <div class="brands__section__cards__image"><img src="https://arid-html.vercel.app/main-file/dist/assets/images/pratners/p2-1.png" alt=""></div>
+            <div class="brands__section__cards__image"><img src="https://arid-html.vercel.app/main-file/dist/assets/images/pratners/p2-2.png" alt=""></div>
+            <div class="brands__section__cards__image"><img src="https://arid-html.vercel.app/main-file/dist/assets/images/pratners/p2-3.png" alt=""></div>
+            <div class="brands__section__cards__image"><img src="https://arid-html.vercel.app/main-file/dist/assets/images/pratners/p2-4.png" alt=""></div>
+            <div class="brands__section__cards__image"><img src="https://arid-html.vercel.app/main-file/dist/assets/images/pratners/p2-5.png" alt=""></div>
+
+
+          </div>
+
+       </div>
+      </section>
+
+      <section class="tours__section">
+        <div class="container">
+         <div class="tours__section__heading">
+           <h5>Explore Our Tours</h5>
+           <h2>New and Most Popular Tours</h2>
+         </div>
+
+         <div class="tours__section__cards">
+          <div class="tours__section__card tours__section__card1">
+           <div class="tours__section__card__review">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>10 Review</span>
+           </div>
+
+           <div class="tours__section__card__content">
+              <a href="#">A tour of the Amazon Forest.</a>
+              <p>03 days/ form $2500</p>
+           </div>
+          </div>
+
+          <div class="tours__section__card tours__section__card2">
+            <div class="tours__section__card__review">
+             <i class="fa-solid fa-star"></i>
+             <i class="fa-solid fa-star"></i>
+             <i class="fa-solid fa-star"></i>
+             <i class="fa-solid fa-star"></i>
+             <i class="fa-solid fa-star"></i>
+             <span>10 Review</span>
+            </div>
+ 
+            <div class="tours__section__card__content">
+               <a href="#">A tour of the Amazon Forest.</a>
+               <p>03 days/ form $2500</p>
+            </div>
+          </div>
+
+           <div class="tours__section__card tours__section__card3">
+            <div class="tours__section__card__review">
+             <i class="fa-solid fa-star"></i>
+             <i class="fa-solid fa-star"></i>
+             <i class="fa-solid fa-star"></i>
+             <i class="fa-solid fa-star"></i>
+             <i class="fa-solid fa-star"></i>
+             <span>10 Review</span>
+            </div>
+ 
+            <div class="tours__section__card__content">
+               <a href="#">A tour of the Amazon Forest.</a>
+               <p>03 days/ form $2500</p>
+            </div>
+          </div>
          
+        </div>
+
+        </div>
+      </section>
+
+      <section class="opinion__section">
+       
+        <div class="container">
+          <div class="opinion__section__icon opinion__section__icon1"><i class="fa-solid fa-arrow-left-long"></i></div>
+
+           <div class="opinion__section__card">
+            <div class="opinion__section__card__left">
+                 <div class="opinion__section__card__left__image">
+                 <img src="https://arid-html.vercel.app/main-file/dist/assets/images/touriest/testi-3.webp" alt="">
+                 </div> 
+                   
+                 <div class="opinion__section__card__left__content">
+                  <h5>Elenar Pena</h5>
+                  <p>Director of Creative Solution</p>
+                 </div>
+                </div>
+
+                <div class="opinion__section__card__right">
+                  <svg class="lg:max-w-[30px] max-w-[20px] opinion__section__card__right__svg1" width="30" height="27" viewBox="0 0 30 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.714 26.8074C21.8987 26.8074 20.2813 25.9812 18.85 24.3176C17.4188 22.6651 16.709 20.4768 16.709 17.7525C16.709 15.4413 18.0122 11.902 20.6071 7.14565C23.2136 2.37816 25.1452 7.37518e-07 26.4135 8.484e-07C27.1234 9.10453e-07 27.4841 0.35728 27.4841 1.06068C27.4841 1.25049 26.7394 2.79128 25.2616 5.6942C23.7721 8.59713 23.0391 10.8748 23.0391 12.5049C23.0391 13.7666 23.8769 14.8049 25.5641 15.6088C27.2397 16.4127 28.3684 17.2501 28.9269 18.1209C29.4855 18.9918 29.7647 19.9408 29.7647 20.9457C29.7647 22.7656 29.2062 24.2059 28.0891 25.2443C26.9372 26.2826 25.4943 26.8074 23.714 26.8074Z" fill="#FF7C5B"></path>
+                    <path d="M7.00493 26.8074C5.1897 26.8074 3.56064 25.9812 2.14104 24.3176C0.709797 22.6651 -1.79014e-06 20.4768 -1.55197e-06 17.7525C-1.34992e-06 15.4413 1.30324 11.902 3.89809 7.14565C6.49295 2.37816 8.43617 7.37514e-07 9.69287 8.47378e-07C10.4027 9.09431e-07 10.7634 0.35728 10.7634 1.06068C10.7634 1.25049 10.0187 2.79128 8.54091 5.6942C7.05149 8.59713 6.31841 10.8748 6.31841 12.5049C6.31841 13.7666 7.15621 14.8049 8.84344 15.6088C10.519 16.4127 11.6477 17.2501 12.2063 18.1209C12.7648 18.9918 13.0441 19.9408 13.0441 20.9457C13.0441 22.7656 12.4855 24.2059 11.3685 25.2443C10.2514 26.2826 8.78526 26.8074 7.00493 26.8074Z" fill="#FF7C5B"></path>
+                </svg>
+
+                <p>Nullam orci dui, dictum et magna sollicitudin, tempor blandit <br> erat. Maecenas suscipit tellus sit amet augue placerat fringilla a id <br> lacus. Fusce tincidunt in leo lacinia condimentum.Donec placerat, <br> orci.</p>
+
+                <div class="opinion__section__card__right__svg2"><svg class="ml-auto lg:max-w-[30px] max-w-[20px] " width="30" height="27" viewBox="0 0 30 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.05119 0.000241621C7.86642 0.00024178 9.48384 0.826454 10.9151 2.49005C12.3463 4.14249 13.0562 6.33085 13.0562 9.05513C13.0562 11.3663 11.7529 14.9056 9.15803 19.662C6.55154 24.4295 4.61993 26.8076 3.35159 26.8076C2.64178 26.8076 2.28106 26.4503 2.28106 25.7469C2.28106 25.5571 3.02578 24.0163 4.50357 21.1134C5.993 18.2105 6.72608 15.9328 6.72608 14.3027C6.72608 13.0411 5.88828 12.0027 4.20104 11.1988C2.52543 10.3949 1.39673 9.55756 0.838193 8.68668C0.279657 7.8158 0.000388935 6.86677 0.000389023 5.86191C0.000389182 4.042 0.558927 2.6017 1.676 1.56335C2.82798 0.524995 4.27085 0.000241465 6.05119 0.000241621Z" fill="#FF7C5B"></path>
+                  <path d="M22.7602 0.000241621C24.5754 0.00024178 26.2045 0.826454 27.6241 2.49005C29.0553 4.14249 29.7651 6.33085 29.7651 9.05513C29.7651 11.3663 28.4619 14.9056 25.867 19.662C23.2722 24.4295 21.329 26.8076 20.0723 26.8076C19.3625 26.8076 19.0017 26.4503 19.0017 25.7469C19.0017 25.5571 19.7464 24.0163 21.2242 21.1134C22.7136 18.2105 23.4467 15.9328 23.4467 14.3027C23.4467 13.0411 22.6089 12.0027 20.9217 11.1988C19.2461 10.3949 18.1174 9.55756 17.5589 8.68668C17.0003 7.8158 16.7211 6.86677 16.7211 5.86191C16.7211 4.042 17.2796 2.6017 18.3967 1.56335C19.5137 0.524995 20.9799 0.000241465 22.7602 0.000241621Z" fill="#FF7C5B"></path>
+              </svg></div>
+                </div>
+           </div>
+
+           <div class="opinion__section__icon opinion__section__icon2"><i class="fa-solid fa-arrow-right-long"></i></div>
+
+        </div>
+       
+      </section>
+
+      <section class="news__section">
+        <div class="container">
+        <div class="news__section__heading">
+            <h5>Blog and News</h5>
+            <h2>Stay Update with Travel Tips!</h2>
+
+        </div>
+
+        <div class="news__section__cards">
+         <div class="news__section__card">
+          <div class="news__section__card__image">
+           <img src="https://arid-html.vercel.app/main-file/dist/assets/images/blog/b3-1.webp" alt="">
+          </div>
+
+          <div class="news__section__card__body">
+          <div class="news__section__card__body__above">
+           <div class="news__section__card__body__above__des"><i class="fa-regular fa-user"></i><span>Jahid Hassan</span></div>
+           <div class="news__section__card__body__above__des"><i class="fa-regular fa-clock"></i><span>8 Sep, 2020</span></div>
+          </div>
+
+          <div class="news__section__card__body__content">
+           <a href="#">Indulge in the purest forms of body care with <br> Soulflower!</a>
+           <p>Soulflower brings to you four new soaps with the most unique ingredients to <br> pamper...</p>
+           <a class="read" href="#">Read More <i class="fa-solid fa-chevron-right"></i></a>
+          </div>
+
+          </div>
+           </div>
+
+        
+           <div class="news__section__card">
+          <div class="news__section__card__image">
+           <img src="https://arid-html.vercel.app/main-file/dist/assets/images/blog/b3-2.webp" alt="">
+          </div>
+
+          <div class="news__section__card__body">
+          <div class="news__section__card__body__above">
+           <div><i class="fa-regular fa-user"></i><span>Jahid Hassan</span></div>
+           <div><i class="fa-regular fa-clock"></i><span>8 Sep, 2020</span></div>
+          </div>
+
+          <div class="news__section__card__body__content">
+           <a href="#">Benefit from a 15% discount mak your reservations.</a>
+           <p>Soulflower brings to you four new soaps with the most unique ingredients to <br> pamper...</p>
+           <a class="read" href="#">Read More <i class="fa-solid fa-chevron-right"></i></a>
+          </div>
+
+          </div>
+        </div>
+
+        
+      </div>
+
+
 
 
 
         </div>
-        </section>
+
+
+
+      </section>
+
+      <section class="images__section">
+       <div class="container">
+       <div class="images__section__image"><img src="https://arid-html.vercel.app/main-file/dist/assets/images/instagram/insta-1.webp" alt=""> 
+        <div class="images__section__image__icon"><i class="fa-brands fa-instagram"></i></div>
+      </div> 
+
+       <div class="images__section__image"> <img src="https://arid-html.vercel.app/main-file/dist/assets/images/instagram/insta-2.webp" alt="">
+        <div class="images__section__image__icon"><i class="fa-brands fa-instagram"></i></div>
+      </div>
+
+        <div class="images__section__image"><img src="https://arid-html.vercel.app/main-file/dist/assets/images/instagram/insta-3.webp" alt="">
+          <div class="images__section__image__icon"><i class="fa-brands fa-instagram"></i></div>
+        </div>
+
+       <div class="images__section__image"> <img src="https://arid-html.vercel.app/main-file/dist/assets/images/instagram/insta-4.webp" alt="">
+        <div class="images__section__image__icon"><i class="fa-brands fa-instagram"></i></div>
+      </div>
+
+       <div class="images__section__image"> <img src="https://arid-html.vercel.app/main-file/dist/assets/images/instagram/insta-5.webp" alt="">
+        <div class="images__section__image__icon"><i class="fa-brands fa-instagram"></i></div>
+      </div>
+
+
+       </div>
+      </section>
     </main>
 
+    <footer>
+      <div class="container">
+        <div class="footer__above">
+          <div class="footer__above__image"><img src="https://arid-html.vercel.app/main-file/dist/assets/images/logo-white.png" alt=""></div>
+          <div class="footer__above__icons">
+           
+           <div class="footer__above__icons__icon"><i class="fa-brands fa-whatsapp"></i></div>
+          
 
-    <footer></footer>
+          <div class="footer__above__icons__icon"><i class="fa-brands fa-twitter"></i></div>
+       
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+          <div class="footer__above__icons__icon"><i class="fa-brands fa-pinterest"></i></div>
+         
+
+          <div class="footer__above__icons__icon"><i class="fa-brands fa-instagram"></i></div>
+        
+          </div>
+      </div>
+
+      <hr>
+
+      <div class="footer__mid">
+        <div class="footer__mid__left"><h3>Newsletter</h3>
+        <div class="footer__mid__inp"><i class="fa-regular fa-envelope"></i><input type="email" placeholder=" Email Address"></div>
+        <button class="all__button footer__mid__button1">Subscribe</button>
+        <div class="footer__mid__button2"><a href="#">We Are Hiring!</a></div>
+      </div>
+
+      <div class="footer__mid__nav">
+         <h3>Navigation</h3>
+         <ul>
+          <li><a href="#">About Company</a></li>
+          <li><a href="#">Online Query</a></li>
+          <li><a href="#">Become Partner</a></li>
+          <li><a href="#">Help & Support</a></li>
+         </ul>
+      </div>
+
+      <div class="footer__mid__dest">
+        <h3>Destinations</h3>
+        <ul>
+        <li><a href="#">Grand Switzerland</a></li>
+        <li><a href="#">Beauty of Paris</a></li>
+        <li><a href="#">United States</a></li>
+        <li><a href="#">Wiesbaden Sea</a></li>
+      </ul>
+      </div>
+
+      <div class="footer__mid__right">
+        <h3>Contact Us</h3>
+        <ul>
+       <li><i class="fa-solid fa-location-dot"></i><a href="#">3891 Ranchview Dr. Richardson, <br> California 62639</a></li>
+       <li><i class="fa-solid fa-phone-volume"></i><a href="#">+88 0123 6985</a></li>
+       <li><i class="fa-regular fa-envelope"></i><a href="#">example@gmail.com</a></li>
+      </ul>
+      </div>
+
+      
+
+      </div>
+
+      <hr >
+      
+
+      <div class="footer__end">
+        <div class="footer__end__left">
+           <p>© Arid 2019 | All rights reserved.</p>
+        </div>
+
+        <div class="footer__end__right">
+          <a href="#">Privacy Policy</a> | <a href="#">Term of Use</a>
+        </div>
+      </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
